@@ -5,42 +5,62 @@
 }
 table {
   margin-top: 50px;
+  border: 4px solid;
+  margin: auto;
+  margin-top: 50px;
 }
 
 html {
   background: url(./img/rm309-adj-05.jpg) top center/cover no-repeat;
 }
-table {
-  border: 4px solid;
-  margin: auto;
-  margin-top: 50px;
-}
-.list__table {
-  font-family: arial;
-}
 
-.list__table{
+.container{
   height: 700px;
   overflow: scroll;
 }
 
-.lists__table li {
-  display: block;
+.list__table {
+  font-family: arial;
+  height: 700px;
+  overflow: scroll;
+  width: 500px;
 }
-.lists__table li a {
+
+.lists__table {
+  line-height: 52px;
+  text-decoration: none;
+  font-size: 24px;
+  color: black;
+}
+
+.elements__container {
+  width: 550px;
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 4px;
+}
+
+.elements__container:hover{
+  background-color: #9a96d5;
+  line-height: 12px;
+}
+
+.element-list__table{
   line-height: 52px;
   text-decoration: none;
   font-size: 24px;
   padding: 0 12px;
   color: black;
+  font-family: arial;
 }
 
-
-.lists__table li:hover a {
-  width: 100%;
-  height: 100%;
+.lists__table a{
+  text-decoration: none;
+  padding: 12px 16px;
   background-color: #ccc;
-  display: block;
+  margin: 12px;
+  border-radius: 8px;
+  font-family: arial;
 }
 
 .header__table {
@@ -51,8 +71,14 @@ table {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-.lists__table {
+.lists__table a{
   list-style-type: none;
+  color: black;
+}
+
+.lists__table a:hover{
+  background-color: white;
+  color: black;
 }
 
 iframe {
